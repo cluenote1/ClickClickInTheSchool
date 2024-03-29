@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 99b72a4582a1bd040b183186a477c366, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -434,7 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5651366938289669743}
   - component: {fileID: 352434891202663580}
-  - component: {fileID: 2536464961000007713}
+  - component: {fileID: 3677780954051820789}
   m_Layer: 0
   m_Name: NoteGroup
   m_TagString: Untagged
@@ -477,27 +477,26 @@ MonoBehaviour:
   notePrefab: {fileID: 8806802774196041601, guid: 7b9c0a9a483a2aa43867d570beae021d, type: 3}
   noteSpawn: {fileID: 7819629046542634256}
   noteGap: 7.5
---- !u!95 &2536464961000007713
-Animator:
-  serializedVersion: 5
+  btnSpriteRenderer: {fileID: 1281913207526660611}
+  normalBtnSprite: {fileID: 21300000, guid: d7b61edc0b017174095824530172ad1f, type: 3}
+  selectBtnSprite: {fileID: 21300000, guid: 4fce3950ae84d9c46a154454c898bf17, type: 3}
+  anim: {fileID: 3677780954051820789}
+--- !u!111 &3677780954051820789
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5729276255147065693}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94921add7dfc6204f987b0137a237009, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7819629046542634256
 GameObject:
   m_ObjectHideFlags: 0
