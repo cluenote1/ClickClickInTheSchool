@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    void Start()
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite appleSprite;
+    [SerializeField] private Sprite blueberrySprite;
+
+
+    public void SetSprite(bool isApple)
     {
-        
+        spriteRenderer.sprite = isApple ? appleSprite : blueberrySprite;
     }
 
-    void Update()
+    public void Destroy()
     {
-        
+        GameObject.Destroy(gameObject);
     }
 }

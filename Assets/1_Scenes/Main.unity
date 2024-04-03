@@ -219,6 +219,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352434891202663580, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1818303892}
+    - target: {fileID: 5199551118434126863, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5651366938289669743, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.9
@@ -436,6 +444,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1818303892 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 3677780954051820789, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+  m_PrefabInstance: {fileID: 433841806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5356354694638163079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +457,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 608345419521381338, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 608345419521381338, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 608345419521381338, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 608345419521381338, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5651366938289669743, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1
