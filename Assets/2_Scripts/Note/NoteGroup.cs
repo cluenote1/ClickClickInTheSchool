@@ -14,7 +14,6 @@ public class NoteGroup : MonoBehaviour
     [SerializeField] private Sprite normalBtnSprite;
     [SerializeField] private Sprite selectBtnSprite;
     [SerializeField] private Animation anim;
-
     [SerializeField] private KeyCode keyCode;
     public KeyCode KeyCode
     {
@@ -29,11 +28,11 @@ public class NoteGroup : MonoBehaviour
     {
         for (int i = 0; i < noteMaxNum; i++)
         {
-            SpawnNote(true);
+            CreateNote(true);
         }
     }
 
-    private void SpawnNote(bool isApple)
+    private void CreateNote(bool isApple)
     {
         GameObject notegameObj = Instantiate(notePrefab);
         notegameObj.transform.SetParent(noteSpawn.transform);
@@ -50,11 +49,9 @@ public class NoteGroup : MonoBehaviour
         if (noteList.Count > 0)
         {
             Note delNote = noteList[0];
-            delNote.Destroy();
+            noteList[0].DeleteNote();
             noteList.RemoveAt(0);
         }
-            
-
         
         
         //줄 내려오기
@@ -62,8 +59,9 @@ public class NoteGroup : MonoBehaviour
             noteList[i].transform.localPosition = Vector3.up * i * noteGap;
 
         //생성
-        SpawnNote(isApple);
+        CreateNote(isApple);
 
+        //키보드 반짝
         anim.Play();
         btnSpriteRenderer.sprite = selectBtnSprite;
         

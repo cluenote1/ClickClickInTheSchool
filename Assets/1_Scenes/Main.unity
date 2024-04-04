@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1818303892}
+    - target: {fileID: 352434891202663580, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: keyCode
+      value: 115
+      objectReference: {fileID: 0}
     - target: {fileID: 5199551118434126863, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -457,6 +461,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352434891202663580, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
+      propertyPath: keyCode
+      value: 97
+      objectReference: {fileID: 0}
     - target: {fileID: 608345419521381338, guid: 9e42f4a49b94041469b91b1d925e40e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.98
