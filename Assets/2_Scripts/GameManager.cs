@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         UIManager.Instance.OnScoreChange(this.score, maxScore);
+        NoteManager.Instance.Create();
     }
 
     internal void CalculateScore(bool isApple)

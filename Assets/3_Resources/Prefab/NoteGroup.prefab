@@ -480,6 +480,7 @@ MonoBehaviour:
   btnSpriteRenderer: {fileID: 1281913207526660611}
   normalBtnSprite: {fileID: 21300000, guid: d7b61edc0b017174095824530172ad1f, type: 3}
   selectBtnSprite: {fileID: 21300000, guid: 4fce3950ae84d9c46a154454c898bf17, type: 3}
+  keyCodeTmp: {fileID: 7602451584743329109}
   anim: {fileID: 3677780954051820789}
 --- !u!111 &3677780954051820789
 Animation:
