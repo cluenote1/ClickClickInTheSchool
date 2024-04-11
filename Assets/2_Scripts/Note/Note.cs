@@ -22,7 +22,7 @@ public class Note : MonoBehaviour
         GameObject.Destroy(gameObject);
     }
 
-    public void DeleteNote()
+    public void CalculateScore()
     {
         GameManager.Instance.CalculateScore(isApple);
 
