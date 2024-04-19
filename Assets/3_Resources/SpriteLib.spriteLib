@@ -54,8 +54,8 @@ MonoBehaviour:
       m_Sprite: {fileID: -3390599506449600895, guid: a50f4b20a56102746818ac3fbfabde76, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: -3390599506449600895, guid: a50f4b20a56102746818ac3fbfabde76, type: 3}
-    - m_Name: ork
-      m_Hash: 1000601259
+    - m_Name: Ork
+      m_Hash: 65974347
       m_Sprite: {fileID: 6949574652463644386, guid: a50f4b20a56102746818ac3fbfabde76, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 6949574652463644386, guid: a50f4b20a56102746818ac3fbfabde76, type: 3}
@@ -142,5 +142,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638490385159184168
+  m_ModificationHash: 638491344668876559
   m_Version: 1
