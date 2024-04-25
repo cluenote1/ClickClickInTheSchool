@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
+    AudioSource audioSource;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite appleSprite;
     [SerializeField] private Sprite blueberrySprite;
 
     private bool isApple;
 
-
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void SetSprite(bool isApple)
     {
         this.isApple = isApple;
