@@ -60,7 +60,8 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        SceneManager.LoadScene(2s);
+        SceneManager.LoadScene(3);
+        
     }
 
 

@@ -8,9 +8,20 @@ public class Change : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
     
     public void GameExit()
     {
         Application.Quit();
+    }
+
+    public void ReplayGame()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void ReplayMenu()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }

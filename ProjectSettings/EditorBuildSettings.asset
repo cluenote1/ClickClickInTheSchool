@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1_Scenes/ClearScene.unity
     guid: 7780ea0b5b0d3574296eabdd2fcaef6c
+  - enabled: 1
+    path: Assets/1_Scenes/Over Scene.unity
+    guid: ac8aacf5d93279741857dfc41381ac5e
   m_configObjects: {}
