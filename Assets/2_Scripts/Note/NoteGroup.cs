@@ -16,6 +16,8 @@ public class NoteGroup : MonoBehaviour
     [SerializeField] private Sprite selectBtnSprite = null;
     [SerializeField] private TextMeshPro keyCodeTmp;
     [SerializeField] private Animation anim;
+    private AudioSource didguswns;
+
     private KeyCode keyCode;
     public KeyCode KeyCode
     {
@@ -56,7 +58,7 @@ public class NoteGroup : MonoBehaviour
         if (noteList.Count > 0)
         {
             Note delNote = noteList[0];
-            noteList[0].CalculateScore();
+            delNote.GiveScoreAndDeleteNote();
             noteList.RemoveAt(0);
         }
         
@@ -67,6 +69,11 @@ public class NoteGroup : MonoBehaviour
 
         //생성
         CreateNote(isApple);
+
+        anim.Play();
+        btnSpriteRenderer.sprite = selectBtnSprite;
+
+
 
         //키보드 반짝
         anim.Play();

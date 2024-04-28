@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,14 +22,13 @@ public class InputManager : MonoBehaviour
             return;
         }
 
-        foreach(KeyCode keyCode in keyCodeList)
+        foreach (KeyCode keyCode in keyCodeList)
         {
-            if (Input.GetKeyDown(keyCode) == true)
+            if (Input.GetKeyDown(keyCode))
             {
                 NoteManager.Instance.OnInput(keyCode);
                 break;
             }
         }
-        
     }
 }

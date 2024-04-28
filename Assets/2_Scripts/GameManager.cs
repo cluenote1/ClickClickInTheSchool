@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    
+    
 
     [SerializeField] private int maxScore;
     [SerializeField] private int noteGroupCreateScore = 10;
@@ -14,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverObj;
     private int score;
     private int nextNoteGroupUnlookCnt;
+    public float currentGameTime; // 메인 씬에서 기록한 현재 게임 시간
+    public float bestTime; // 게임 클리어 씬에서 표시할 베스트 타임
 
     [SerializeField] private float maxTime = 30f;
 
@@ -31,6 +36,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        
     }
 
     private void Start()
@@ -42,6 +48,9 @@ public class GameManager : MonoBehaviour
         gameOverObj.SetActive(false);
 
         StartCoroutine(TImerCoroutine());
+
+        Instance = this;
+        
     }
 
     IEnumerator TImerCoroutine()
@@ -73,6 +82,8 @@ public class GameManager : MonoBehaviour
             score++;
             nextNoteGroupUnlookCnt++;
 
+            
+
             if (noteGroupCreateScore <= nextNoteGroupUnlookCnt)
             {
                 nextNoteGroupUnlookCnt = 0;
@@ -87,6 +98,8 @@ public class GameManager : MonoBehaviour
         }else
         {
             score--;
+
+            
         }
         
         UIManager.Instance.OnScoreChange(this.score, maxScore);
@@ -97,6 +110,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    
+
+   
 
     
+
 }

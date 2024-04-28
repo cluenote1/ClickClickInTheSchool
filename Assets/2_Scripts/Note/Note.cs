@@ -24,9 +24,17 @@ public class Note : MonoBehaviour
     public void Destroy()
     {
         GameObject.Destroy(gameObject);
+        if (isApple)
+        {
+            SoundManager.Instance.Sound(0);
+        }
+        if (!isApple)
+        {
+            SoundManager.Instance.Sound(1);
+        }
     }
 
-    public void CalculateScore()
+    public void GiveScoreAndDeleteNote()
     {
         GameManager.Instance.CalculateScore(isApple);
 
