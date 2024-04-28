@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bfe8720616fa2448a37f97d6bb34a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScore: 1
+  maxScore: 20
   noteGroupCreateScore: 10
   gameClearObj: {fileID: 1128004312}
   gameOverObj: {fileID: 1425824051}
-  maxTime: 3
+  maxTime: 30
 --- !u!4 &94886781
 Transform:
   m_ObjectHideFlags: 0

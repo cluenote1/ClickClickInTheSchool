@@ -81,7 +81,8 @@ public class GameManager : MonoBehaviour
 
              if (score >= maxScore)
             {
-                gameClearObj.SetActive(true);
+                SceneManager.LoadScene(2);
+                Score.bestTime = Score.time;
             }
         }else
         {
@@ -96,4 +97,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    
 }
