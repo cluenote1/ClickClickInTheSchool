@@ -5,6 +5,7 @@ using UnityEngine;
 public class NoteManager : MonoBehaviour
 {
     public static NoteManager Instance;
+    AudioSource audioSource;
 
     [SerializeField] private GameObject noteGroupPrefab;
     [SerializeField] private float noteGroupGap = 1f;
@@ -36,6 +37,10 @@ public class NoteManager : MonoBehaviour
 
         KeyCode keyCode = this.wholeKeyCodeArr[noteGroupList.Count];
         CreateNoteGroup(keyCode);
+
+        audioSource = GetComponent<AudioSource>();
+
+        audioSource.Play();
     }
     public void CreateNoteGroup(KeyCode keycode)
     {

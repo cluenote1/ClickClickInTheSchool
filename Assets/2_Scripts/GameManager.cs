@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private int nextNoteGroupUnlookCnt;
     public float currentGameTime; // 메인 씬에서 기록한 현재 게임 시간
     public float bestTime; // 게임 클리어 씬에서 표시할 베스트 타임
+    
 
     [SerializeField] private float maxTime = 30f;
 
@@ -110,10 +111,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-    
-
-   
-
-    
-
 }
