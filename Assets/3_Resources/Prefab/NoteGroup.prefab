@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1741069821923846774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -482,6 +482,8 @@ MonoBehaviour:
   selectBtnSprite: {fileID: 21300000, guid: 4fce3950ae84d9c46a154454c898bf17, type: 3}
   keyCodeTmp: {fileID: 7602451584743329109}
   anim: {fileID: 3677780954051820789}
+  spawnAnim: {fileID: 7400000, guid: c61be40ed816aaa4fafcae4715f4a92e, type: 2}
+  btnAnim: {fileID: 7400000, guid: b48ff214096970a43abe0cb603f55089, type: 2}
 --- !u!111 &3677780954051820789
 Animation:
   m_ObjectHideFlags: 0
@@ -494,6 +496,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
+  - {fileID: 7400000, guid: c61be40ed816aaa4fafcae4715f4a92e, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

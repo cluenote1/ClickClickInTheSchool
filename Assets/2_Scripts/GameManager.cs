@@ -19,24 +19,41 @@ public class GameManager : MonoBehaviour
     private int nextNoteGroupUnlookCnt;
     public float currentGameTime; // 메인 씬에서 기록한 현재 게임 시간
     public float bestTime; // 게임 클리어 씬에서 표시할 베스트 타임
-    
+    private bool isGameClear = false;
+    private bool isGameOver = false;
 
     [SerializeField] private float maxTime = 30f;
+    public static float myTime;
+    public static float minTime;
 
-    
+
     public bool IsGameDone
     {
         get
         {
-            if (gameClearObj.activeSelf || gameOverObj.activeSelf)
+            if (isGameClear || isGameOver)
+            {
+                minTime = PlayerPrefs.GetFloat("minTime", 1000f);
+                if (minTime >= myTime)
+                {
+                    minTime = myTime;
+                    PlayerPrefs.SetFloat("minTime", minTime);
+                }
+
+                SceneManager.LoadScene(3);
                 return true;
+            
+            }
             else
                 return false;
+                
+            
         }
     }
     private void Awake()
     {
         Instance = this;
+        //DontDestroyOnLoad(gameObject);
         
     }
 
@@ -45,8 +62,7 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.OnScoreChange(this.score, maxScore);
         NoteManager.Instance.Create();
 
-        gameClearObj.SetActive(false);
-        gameOverObj.SetActive(false);
+        
 
         StartCoroutine(TImerCoroutine());
 
@@ -61,6 +77,7 @@ public class GameManager : MonoBehaviour
         while (currentTime < maxTime)
         {
             currentTime += Time.deltaTime;
+            myTime += currentTime;
             UIManager.Instance.OnTimerChange(currentTime, maxTime);
             yield return null;
 

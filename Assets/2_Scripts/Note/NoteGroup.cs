@@ -18,6 +18,19 @@ public class NoteGroup : MonoBehaviour
     [SerializeField] private Animation anim;
     private AudioSource didguswns;
 
+    public AnimationClip spawnAnim;
+    public AnimationClip btnAnim;
+    AudioSource audioSource;
+    private void Start()
+    {
+        anim.clip = spawnAnim;
+        anim.Play();
+        anim.clip = btnAnim;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
+    }
+
     private KeyCode keyCode;
     public KeyCode KeyCode
     {

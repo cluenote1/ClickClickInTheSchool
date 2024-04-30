@@ -3,7 +3,16 @@ guid: b8c4fdf93f298a44099571741189e1f4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - notePrefab: {instanceID: 0}
+  - noteSpawn: {instanceID: 0}
+  - btnSpriteRenderer: {instanceID: 0}
+  - normalBtnSprite: {instanceID: 0}
+  - selectBtnSprite: {instanceID: 0}
+  - keyCodeTmp: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - spawnAnim: {instanceID: 0}
+  - btnAnim: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

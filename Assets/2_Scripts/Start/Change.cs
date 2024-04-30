@@ -15,8 +15,16 @@ public class Change : MonoBehaviour
         Application.Quit();
     }
 
+    private void Start()
+    {
+        Debug.Log($"myTime " + GameManager.myTime);
+        Debug.Log($"minTime " + GameManager.minTime);
+
+        
+    }
     public void ReplayGame()
     {
+        
         SceneManager.LoadScene("Main");
     }
 
