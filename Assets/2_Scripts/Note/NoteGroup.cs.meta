@@ -7,12 +7,12 @@ MonoImporter:
   - notePrefab: {instanceID: 0}
   - noteSpawn: {instanceID: 0}
   - btnSpriteRenderer: {instanceID: 0}
-  - normalBtnSprite: {instanceID: 0}
-  - selectBtnSprite: {instanceID: 0}
+  - normalBtnSprite: {fileID: 21300000, guid: d7b61edc0b017174095824530172ad1f, type: 3}
+  - selectBtnSprite: {fileID: 21300000, guid: 4fce3950ae84d9c46a154454c898bf17, type: 3}
   - keyCodeTmp: {instanceID: 0}
   - anim: {instanceID: 0}
-  - spawnAnim: {instanceID: 0}
-  - btnAnim: {instanceID: 0}
+  - spawnAnim: {fileID: 7400000, guid: c61be40ed816aaa4fafcae4715f4a92e, type: 2}
+  - btnAnim: {fileID: 7400000, guid: b48ff214096970a43abe0cb603f55089, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

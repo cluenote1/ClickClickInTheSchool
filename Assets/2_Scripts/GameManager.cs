@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int noteGroupCreateScore = 10;
     [SerializeField] private GameObject gameClearObj;
     [SerializeField] private GameObject gameOverObj;
-    private int score;
+    
     private int nextNoteGroupUnlookCnt;
     public float currentGameTime; // 메인 씬에서 기록한 현재 게임 시간
     public float bestTime; // 게임 클리어 씬에서 표시할 베스트 타임
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        UIManager.Instance.OnScoreChange(this.score, maxScore);
+        UIManager.Instance.OnScoreChange(ScoreManager.score, maxScore);
         NoteManager.Instance.Create();
 
         
@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
     {
         if (isApple)
         {
-            score++;
+            ScoreManager.score++;
             nextNoteGroupUnlookCnt++;
 
             
@@ -108,19 +108,22 @@ public class GameManager : MonoBehaviour
                 NoteManager.Instance.CreateNoteGroup();
             }
 
-             if (score >= maxScore)
+             if (ScoreManager.score >= maxScore)
             {
                 SceneManager.LoadScene(2);
-                Score.bestTime = Score.time;
+                if (ScoreManager.score > ScoreManager.bestScore)
+                {
+                    ScoreManager.bestScore = ScoreManager.score;
+                }
             }
         }else
         {
-            score--;
+            ScoreManager.score--;
 
             
         }
         
-        UIManager.Instance.OnScoreChange(this.score, maxScore);
+        UIManager.Instance.OnScoreChange(ScoreManager.score, maxScore);
 
         
     }

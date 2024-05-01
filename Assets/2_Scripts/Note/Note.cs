@@ -32,6 +32,7 @@ public class Note : MonoBehaviour
         {
             SoundManager.Instance.Sound(1);
         }
+        
     }
 
     public void GiveScoreAndDeleteNote()

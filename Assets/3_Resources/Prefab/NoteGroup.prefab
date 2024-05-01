@@ -483,7 +483,7 @@ MonoBehaviour:
   keyCodeTmp: {fileID: 7602451584743329109}
   anim: {fileID: 3677780954051820789}
   spawnAnim: {fileID: 7400000, guid: c61be40ed816aaa4fafcae4715f4a92e, type: 2}
-  btnAnim: {fileID: 7400000, guid: b48ff214096970a43abe0cb603f55089, type: 2}
+  btnAnim: {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
 --- !u!111 &3677780954051820789
 Animation:
   m_ObjectHideFlags: 0
@@ -498,7 +498,7 @@ Animation:
   - {fileID: 7400000, guid: 8dc0cba7bb62cc54f9dc63aa746a66c9, type: 2}
   - {fileID: 7400000, guid: c61be40ed816aaa4fafcae4715f4a92e, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &7819629046542634256

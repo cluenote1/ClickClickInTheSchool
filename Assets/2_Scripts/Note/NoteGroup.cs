@@ -7,28 +7,28 @@ using UnityEngine;
 public class NoteGroup : MonoBehaviour
 {
     [SerializeField] private int noteMaxNum = 5;
-    [SerializeField] private GameObject notePrefab = null;
-    [SerializeField] protected GameObject noteSpawn = null;
+    [SerializeField] private GameObject notePrefab ;
+    [SerializeField] protected GameObject noteSpawn;
     [SerializeField] private float noteGap = 6f;
 
-    [SerializeField] private SpriteRenderer btnSpriteRenderer = null;
-    [SerializeField] private Sprite normalBtnSprite = null;
-    [SerializeField] private Sprite selectBtnSprite = null;
+    [SerializeField] private SpriteRenderer btnSpriteRenderer;
+    [SerializeField] private Sprite normalBtnSprite;
+    [SerializeField] private Sprite selectBtnSprite;
     [SerializeField] private TextMeshPro keyCodeTmp;
     [SerializeField] private Animation anim;
     private AudioSource didguswns;
 
     public AnimationClip spawnAnim;
     public AnimationClip btnAnim;
-    AudioSource audioSource;
+    
+   
     private void Start()
     {
         anim.clip = spawnAnim;
         anim.Play();
         anim.clip = btnAnim;
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
-
+        
+        
     }
 
     private KeyCode keyCode;
