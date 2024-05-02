@@ -1,21 +1,18 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
-    
+
+
 
     [SerializeField] private int maxScore;
     [SerializeField] private int noteGroupCreateScore = 10;
     [SerializeField] private GameObject gameClearObj;
     [SerializeField] private GameObject gameOverObj;
-    
+
     private int nextNoteGroupUnlookCnt;
     public float currentGameTime; // 메인 씬에서 기록한 현재 게임 시간
     public float bestTime; // 게임 클리어 씬에서 표시할 베스트 타임
@@ -39,35 +36,32 @@ public class GameManager : MonoBehaviour
                     minTime = myTime;
                     PlayerPrefs.SetFloat("minTime", minTime);
                 }
-
                 SceneManager.LoadScene(3);
                 return true;
-            
+
             }
             else
                 return false;
-                
-            
+
+
         }
     }
     private void Awake()
     {
         Instance = this;
         //DontDestroyOnLoad(gameObject);
-        
+
     }
 
     private void Start()
     {
+        ScoreManager.score = 0;
+
         UIManager.Instance.OnScoreChange(ScoreManager.score, maxScore);
         NoteManager.Instance.Create();
 
-        
-
         StartCoroutine(TImerCoroutine());
-
         Instance = this;
-        
     }
 
     IEnumerator TImerCoroutine()
@@ -88,7 +82,7 @@ public class GameManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(3);
-        
+
     }
 
 
@@ -100,7 +94,7 @@ public class GameManager : MonoBehaviour
             ScoreManager.score++;
             nextNoteGroupUnlookCnt++;
 
-            
+
 
             if (noteGroupCreateScore <= nextNoteGroupUnlookCnt)
             {
@@ -108,7 +102,7 @@ public class GameManager : MonoBehaviour
                 NoteManager.Instance.CreateNoteGroup();
             }
 
-             if (ScoreManager.score >= maxScore)
+            if (ScoreManager.score >= maxScore)
             {
                 SceneManager.LoadScene(2);
                 if (ScoreManager.score > ScoreManager.bestScore)
@@ -116,16 +110,17 @@ public class GameManager : MonoBehaviour
                     ScoreManager.bestScore = ScoreManager.score;
                 }
             }
-        }else
+        }
+        else
         {
             ScoreManager.score--;
 
-            
+
         }
-        
+
         UIManager.Instance.OnScoreChange(ScoreManager.score, maxScore);
 
-        
+
     }
     public void Restart()
     {

@@ -11,13 +11,15 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI bestScoreTmp;
     public static int score;
     public static int bestScore;
-    AudioSource audioSource;
-    private void start()
+    
+
+    private void Start()
     {
         scoreTmp.text = $"Score : {score}";
         bestScoreTmp.text = $"Best Score : {bestScore}";
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
+        
+        
+       
     }
 
     void Update()

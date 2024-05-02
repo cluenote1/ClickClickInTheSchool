@@ -366,10 +366,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 886841358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.16083334, y: 0.44333336}
-  m_AnchorMax: {x: 0.5, y: 0.61833334}
-  m_AnchoredPosition: {x: 208, y: 109.5}
-  m_SizeDelta: {x: -207, y: -55}
+  m_AnchorMin: {x: 0.15583335, y: 0.44333336}
+  m_AnchorMax: {x: 0.5691667, y: 0.61833334}
+  m_AnchoredPosition: {x: 145.5, y: 108}
+  m_SizeDelta: {x: -296, y: -55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &336494128
 CanvasRenderer:
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 0'
+  m_text: 'Score: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -308.04886, y: 80.12189, z: 103.862915, w: -137.45782}
+  m_margin: {x: -295.209, y: 80.12189, z: -2.6054077, w: -137.45782}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Best Score: 0'
+  m_text: 'Best Score: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -407.33807, w: -52.262238}
+  m_margin: {x: 0, y: 0, z: -522.9258, w: -52.262238}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -787,10 +787,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 886841358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19166668, y: 0.27166668}
-  m_AnchorMax: {x: 0.69750005, y: 0.44333336}
-  m_AnchoredPosition: {x: -201.5, y: 24.5}
-  m_SizeDelta: {x: -407, y: -53}
+  m_AnchorMin: {x: 0.15583335, y: 0.27166668}
+  m_AnchorMax: {x: 0.7641667, y: 0.44333336}
+  m_AnchoredPosition: {x: -261.5, y: 24.5}
+  m_SizeDelta: {x: -530, y: -53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &930175279
 PrefabInstance:
